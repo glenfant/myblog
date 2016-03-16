@@ -1,7 +1,8 @@
 Private Pypi servers - 1 - Forewords
 ####################################
 :date: 2013-08-28 21:01
-:author: glenfant
+:author: Gilles Lenfant
+:category: Blog
 :tags: Plone, Python
 :slug: private-pypi-servers-forewords
 :status: published

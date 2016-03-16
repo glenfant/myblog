@@ -1,8 +1,9 @@
 A simple benchmark getting the site object
 ##########################################
 :date: 2008-05-10 10:57
-:author: glenfant
+:author: Gilles Lenfant
 :tags: Plone, Zope 2, Zope 3
+:category: Blog
 :slug: a-simple-benchmark-getting-the-site-object
 :status: published
 :summary: Different ways to get the Plone site object
