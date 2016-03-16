@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Digital Snake and Family</title><link href="http://glenfant.github.io/" rel="alternate"></link><link href="http://glenfant.github.io/feeds/blog.atom.xml" rel="self"></link><id>http://glenfant.github.io/</id><updated>2013-08-28T21:01:00+02:00</updated><entry><title>Private Pypi servers - 1 - Forewords</title><link href="http://glenfant.github.io/private-pypi-servers-forewords.html" rel="alternate"></link><updated>2013-08-28T21:01:00+02:00</updated><author><name>Gilles Lenfant</name></author><id>tag:glenfant.github.io,2013-08-28:private-pypi-servers-forewords.html</id><summary type="html">&lt;div class="section" id="intended-audience"&gt;
+&lt;h2&gt;Intended audience&lt;/h2&gt;
+&lt;p&gt;We assume most of you readers are already familiar with the public Pypi
+- formerly known as Cheeseshop - server.&lt;/p&gt;
+&lt;p&gt;As user, you already know how to search and browse on
+&lt;a class="reference external" href="https://pypi.python.org/pypi"&gt;Pypi&lt;/a&gt; then install the packages that
+fit with your app.&lt;/p&gt;
+&lt;p&gt;We also assume that pip, easy_install and zc.buildout have no major
+secret for you.&lt;/p&gt;
+&lt;p&gt;In addition, you are supposed to know how to tweak correctly the
+setup.py of your personal package - with appropriate metadata - such you
+can deploy this package on Pypi such others - or yourself - can install
+it with the various installation tools mentioned in previous paragraph.&lt;/p&gt;
+&lt;p&gt;If not, please have a look at the official documentations for these
+tools :&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;setuptools: &lt;a class="reference external" href="http://pythonhosted.org/setuptools/index.html"&gt;http://pythonhosted.org/setuptools/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;pip: &lt;a class="reference external" href="http://www.pip-installer.org/en/latest/"&gt;http://www.pip-installer.org/en/latest/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;zc.buildout: &lt;a class="reference external" href="https://pypi.python.org/pypi/zc.buildout"&gt;https://pypi.python.org/pypi/zc.buildout&lt;/a&gt; and
+&lt;a class="reference external" href="http://www.buildout.org/en/latest/"&gt;http://www.buildout.org/en/latest/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="why-a-private-pypi-server"&gt;
+&lt;h2&gt;Why a private Pypi server?&lt;/h2&gt;
+&lt;p&gt;Most of professional Python developers work in companies or as
+freelances and contribute to commercial and private projects which
+results of clever combination of publicly available packages (lxml,
+SQLAlchemy, …) and private package that leverage the various domains of
+your applications features.&lt;/p&gt;
+&lt;p&gt;In order to carry on using your favourite Python packaging and
+installation software factory tools, you need of course to have a
+private repository of packages to build your private applications while
+keeping the public packages you need in their own respective repository
+(usually the Pypi or one of its official clones).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-compared-features"&gt;
+&lt;h2&gt;The compared features&lt;/h2&gt;
+&lt;div class="section" id="software-foundations"&gt;
+&lt;h3&gt;Software foundations&lt;/h3&gt;
+&lt;p&gt;Of course, you’re not supposed to do anything else than running the
+installation recipe of your favourite Pypi server. But you may prefer
+such or such base framework if you want to contribute later, or you may
+have some pain to install the required database, or other requirement,
+these information are here for this.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="base-frameworks"&gt;
+&lt;h3&gt;Base frameworks&lt;/h3&gt;
+&lt;p&gt;I’m not trying to open a flame on the various base frameworks used by
+our various Pypi clones, but, as programmers, you may prefer such or
+such framework if you want to contribute or fix bugs of your favorite
+Pypi server.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="database"&gt;
+&lt;h3&gt;Database&lt;/h3&gt;
+&lt;p&gt;Some of the nominees required a 3rd party database. Is this database
+compatible with your company policy, or with the target system you want
+to dedicate to your Pypi server ?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="installation"&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;Some words about installation. But from the easiest to the most complex
+of our nominees, installation and basic customization are usually easy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="documentation-community-support"&gt;
+&lt;h3&gt;Documentation, Community support&lt;/h3&gt;
+&lt;p&gt;As you are going to choose, perhaps for a long period, an application
+that is actively maintained&lt;/p&gt;
+&lt;p&gt;About this, some private Pypi servers have been discarded from this
+article because these are not actively maintained anymore.&lt;/p&gt;
+&lt;p&gt;Even if most of us are Python experts, and are supposed to feel
+comfortable on Unix admin and databases, we don’t like to grep the code
+when the documentation is missing or is too spartan. And a good,
+structured and exhaustive documentation denote high quality products.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="ui"&gt;
+&lt;h3&gt;UI&lt;/h3&gt;
+&lt;p&gt;Some of the nominees have nearly no Web UI, you may anyway not need an
+UI if you have few packages.&lt;/p&gt;
+&lt;p&gt;A Web UI may be useful for things like changing security settings on a
+particular package, changing its keywords or some features of its
+documentation, removing or hiding deprecated versions, ...&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="proxying"&gt;
+&lt;h3&gt;Proxying&lt;/h3&gt;
+&lt;p&gt;Proxying the public Pypi or another public server may be useful.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Your proxy can distribute public packages when the official Pypi is
+down.&lt;/li&gt;
+&lt;li&gt;You work behind your company’s proxy and this makes a mess to
+easy_install from the official Pypi.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some of the competitors described in this article may contain clones of
+packages that are distributed by the official Pypi. These clones
+packages may be updated periodically through a “cronned” query.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="users-management-and-privileges"&gt;
+&lt;h3&gt;Users management and privileges&lt;/h3&gt;
+&lt;p&gt;Your IT infrastructure has already a common authentication source (LDAP
+or like) and you don’t want to mess your users with an additional
+credential to remember ?&lt;/p&gt;
+&lt;p&gt;You want to provide these users fine grained privileges on various parts
+of your private Pypi, either on a per user base or through groups and
+roles ?&lt;/p&gt;
+&lt;p&gt;If your private Pypi server has multiple repositories (see below), you
+want to grant or disallow distinct groups of users or individual users
+in a per repository policy ?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="custom-security-policies"&gt;
+&lt;h3&gt;Custom security policies&lt;/h3&gt;
+&lt;p&gt;Ah, the Pypi server you have been dreaming of is almost what you need
+but the built in security policy does not comply exactly your
+requirements. You need something fine grained that lets you define
+custom roles with dedicated and maybe localized permissions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="multiple-repositories"&gt;
+&lt;h3&gt;Multiple repositories&lt;/h3&gt;
+&lt;p&gt;With one server instance you may publish two or more repositories with
+their own security policies thanks to the above mentioned users
+management and privileges. This may be useful if you need a private and
+a public repository, or if you need to give to your various customers or
+partners access to their dedicated packages.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="upload-with-setuptools"&gt;
+&lt;h3&gt;Upload with setuptools&lt;/h3&gt;
+&lt;p&gt;If your private Pipi server has this feature, you could register and
+upload your private Python packages with the usual setup respective
+commands :&lt;/p&gt;
+&lt;p&gt;python setup.py sdist register [options]&lt;/p&gt;
+&lt;p&gt;python setup.py sdist upload [options]&lt;/p&gt;
+&lt;p&gt;If you prefer a more minimalistic Pypi server that has not this feature
+(say a simple Apache static distributed directory) , you should :&lt;/p&gt;
+&lt;p&gt;python setup.py sdist&lt;/p&gt;
+&lt;p&gt;scp dist/foo-1.2.3.tar.gz &lt;a class="reference external" href="mailto:myself&amp;#64;apache-pypi"&gt;myself&amp;#64;apache-pypi&lt;/a&gt;:/home/distros/foo/&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="xmlrpc-and-rest-json-support"&gt;
+&lt;h3&gt;XMLRPC and REST/JSON support&lt;/h3&gt;
+&lt;p&gt;This is not an essential feature though none of pip,
+setuptools/easy_install or zc.buildout seem to use this exploration
+feature that’s provided by the official Pypi.&lt;/p&gt;
+&lt;p&gt;Read &lt;a class="reference external" href="http://wiki.python.org/moin/PyPIXmlRpc"&gt;http://wiki.python.org/moin/PyPIXmlRpc&lt;/a&gt; and
+&lt;a class="reference external" href="http://wiki.python.org/moin/PyPIJSON"&gt;http://wiki.python.org/moin/PyPIJSON&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;I could add that I never needed this for in the Python projects I’ve
+been working on. But perhaps you care about this. That’s why I made a
+small test script to run against each nominee.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-nominees"&gt;
+&lt;h2&gt;The nominees&lt;/h2&gt;
+&lt;div class="section" id="apache"&gt;
+&lt;h3&gt;Apache&lt;/h3&gt;
+&lt;p&gt;Yes, you can use a pure Apache with dedicated configuration to make your
+private Pypi server. This is a very reliable solution that just needs a
+dedicated configuration section. Preferably for a dedicated virtual
+host, or several virtual hosts since you may have multiple repositories
+for one Apache instance. Of course, there’s no upload capability, nor
+Web dedicated UI, unless you call browsing the simple index an UI.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pypi-itself"&gt;
+&lt;h3&gt;Pypi itself&lt;/h3&gt;
+&lt;p&gt;If the official Pypi as at &lt;a class="reference external" href="http://pypi.python.org"&gt;http://pypi.python.org&lt;/a&gt; is exactly what you
+need, thats perfect. This software is open source and may be installed
+in your private servers or cloud.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="plone-software-center"&gt;
+&lt;h3&gt;Plone Software Center&lt;/h3&gt;
+&lt;p&gt;The venerable Plone is a modern, full featured non opinionated CMS with
+a modern UI. Products.PloneSoftwareCenter is a rich add-on for Plone
+that lets you add to a company intranet the features of a Pypi server,
+with a rich UI, setuptools upload capability, and a documentation area.&lt;/p&gt;
+&lt;p&gt;You may add Products.Poi to add trackers to your package areas.&lt;/p&gt;
+&lt;p&gt;But Plone is some kind of “monster” that provides out of the box lots of
+features that are not in the domain of a Pypi server requirements. In
+addition, a Plone app is resources expensive and requires more admin
+monitoring than other solutions. Your IT department executives would not
+like this.&lt;/p&gt;
+&lt;p&gt;For the ones who care about corporate theming, PSC can be themed through
+the usual Plone theming service - read Diazo based themes with the
+latest Plone versions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mypypi"&gt;
+&lt;h3&gt;mypypi&lt;/h3&gt;
+&lt;p&gt;mypypi is a full featured Pypi server built on top of Zope 3. It
+provides a spartan and old style but fully functional and nearly
+complete UI.&lt;/p&gt;
+&lt;p&gt;It leverages the security features and the user sources interfaces of
+Zope 3 such you may customize the user sources and security policy to
+whatever you may prefer if you can understand what is ZCML and if you
+know how to add custom user sources available in the Zope ecosystem.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="crate-io"&gt;
+&lt;h3&gt;crate.io&lt;/h3&gt;
+&lt;p&gt;crate.io is the newcomer in the gang and benefits of a very positive
+buzz. Its UI is resolutely modern in line with the new twitter bootstrap
+trend. Its framework leverages asynchronisms through Celery that
+supports heavy time consuming tasks, and thus helps to have a fast and
+fluid UI.&lt;/p&gt;
+&lt;p&gt;Meet its public repository and have an account at &lt;a class="reference external" href="http://crate.io"&gt;http://crate.io&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="devpi"&gt;
+&lt;h3&gt;devpi&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="section" id="inupypi"&gt;
+&lt;h3&gt;inupypi&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pypiserver"&gt;
+&lt;h3&gt;pypiserver&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="section" id="localshop"&gt;
+&lt;h3&gt;localshop&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="section" id="simplepypi"&gt;
+&lt;h3&gt;simplepypi&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="section" id="hey-wait-there-are-other-ones"&gt;
+&lt;h3&gt;Hey, wait! There are other ones&lt;/h3&gt;
+&lt;p&gt;Why do I not tell any word about them ?&lt;/p&gt;
+&lt;p&gt;The answer is simple : the other Pypi private server software (known by
+me) seem to be some kind of abandonwares. But if you want to make a test
+drive of these and make an opinion...&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;ClueReleaseManager: &lt;a class="reference external" href="https://pypi.python.org/pypi/ClueReleaseManager"&gt;https://pypi.python.org/pypi/ClueReleaseManager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;EggBasket: &lt;a class="reference external" href="http://trac.chrisarndt.de/code/wiki/EggBasket"&gt;http://trac.chrisarndt.de/code/wiki/EggBasket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;haufe.eggserver: &lt;a class="reference external" href="https://pypi.python.org/pypi/haufe.eggserver"&gt;https://pypi.python.org/pypi/haufe.eggserver&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chishop: &lt;a class="reference external" href="https://github.com/ask/chishop"&gt;https://github.com/ask/chishop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;scrambled: &lt;a class="reference external" href="https://pypi.python.org/pypi/scrambled"&gt;https://pypi.python.org/pypi/scrambled&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you’re a contributor of one of the above mentioned softwares, and I
+missed something. Or if you know of another private Pypi server software
+that’s not mentioned in this article, please let me know what I missed
+or where I’m wrong. I’ll update this article accordingly. But, remember,
+this is not a troll playground :D&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="Plone"></category><category term="Python"></category></entry><entry><title>Back on iw.memberreplace</title><link href="http://glenfant.github.io/back-on-iwmemberreplace.html" rel="alternate"></link><updated>2009-03-08T14:36:00+01:00</updated><author><name>glenfant</name></author><id>tag:glenfant.github.io,2009-03-08:back-on-iwmemberreplace.html</id><summary type="html">&lt;p&gt;I blogged some months ago about
+&lt;a class="reference external" href="http://plone.org/products/iw-memberreplace/"&gt;iw.memberrreplace&lt;/a&gt;. In
+some words, iw.memberreplace provides a tool that clones the security
+features of an unser to another one (ownership, DC creator, sharings,
+group membership). No more hassle digging around huge Plone site and
+hundreds of clicks to do this.&lt;/p&gt;
+&lt;p&gt;Last week, I read a conversation with &lt;a class="reference external" href="http://n2.nabble.com/Re%3A-what%27s-up-with-plone.app.changeownership-%21-%21-tp2416270p2416270.html"&gt;John Stahl and Mustapha
+Benali&lt;/a&gt;
+about the &lt;a class="reference external" href="http://plone.org/products/plone/roadmap/185/"&gt;PLIP 185&lt;/a&gt;,
+and realized that this PLIP is almost iw.memberreplace (or the
+opposite).&lt;/p&gt;
+&lt;p&gt;So I spend a couple of hours on that component to add the last details
+on that component. Et voilà, the last release of iw.memberreplace
+(1.0.0-RC1) fulfills now that PLIP: the original member can now be
+removed - if defined in a mutable users source.&lt;/p&gt;
+&lt;p&gt;I swear that in the future, I will read the open PLIPs before creating a
+new component ;o)&lt;/p&gt;
+&lt;p&gt;Enjoy...&lt;/p&gt;
+&lt;p&gt;&lt;img alt="iw.memberreplace control panel" src="http://glenfant.files.wordpress.com/2009/03/cliche-2009-03-08-13-53-17.png" /&gt;&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Zope 2"></category><category term="Zope 3"></category></entry><entry><title>A simple benchmark getting the site object</title><link href="http://glenfant.github.io/a-simple-benchmark-getting-the-site-object.html" rel="alternate"></link><updated>2008-05-10T10:57:00+02:00</updated><author><name>Gilles Lenfant</name></author><id>tag:glenfant.github.io,2008-05-10:a-simple-benchmark-getting-the-site-object.html</id><summary type="html">&lt;p&gt;Hi,&lt;/p&gt;
+&lt;p&gt;Ho many of you complain about Plone performances? The latest Plone
+release are said to be faster than the former ones.&lt;/p&gt;
+&lt;p&gt;Her is a sample benchmark that compares the three ways to get the portal
+(Plone) object.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;The first one, I found it when wandering in the Zope 3 subset that
+ships with Zope 2.10.&lt;/li&gt;
+&lt;li&gt;The second one is the recommanded practice since Plone 3, getting the
+&lt;tt class="docutils literal"&gt;plone_portal_state&lt;/tt&gt; multi adapter.&lt;/li&gt;
+&lt;li&gt;And the third one is the (somehow deprecated?) CMF style to get the
+portal object.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is the code as external method, just copy it in an appropriate
+place, and add the external method where you want in your Plone site.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;zope.app.component.hooks&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;getSite&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;zope.component&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;getMultiAdapter&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;Products.CMFCore.utils&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;getToolByName&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;time_now&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;StringIO&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;StringIO&lt;/span&gt;
+
+&lt;span class="n"&gt;COUNT&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;testGetPlone&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Small benchmark&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+
+    &lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;StringIO&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;request&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;REQUEST&lt;/span&gt;
+    &lt;span class="n"&gt;t0&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time_now&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;xrange&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;COUNT&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;plone&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;getSite&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;t1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time_now&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;xrange&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;COUNT&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;plone&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;getMultiAdapter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+            &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+            &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;plone_portal_state&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;portal&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;t2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time_now&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;xrange&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;COUNT&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;plone&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;getToolByName&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;portal_url&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getPortalObject&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;t3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time_now&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;COUNT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;times getSite Zope 3 function:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;t1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;t0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;seconds&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;COUNT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;times plone_portal_state multi adapter:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;t2&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;t1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;seconds&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;COUNT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;times old style getToolByName:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;t3&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;t2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;seconds&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getvalue&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Yeah and here are the results on my MacBook:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;1000 times getSite Zope 3 function: 0.000494956970215 seconds&lt;/span&gt;
+&lt;span class="go"&gt;1000 times plone_portal_state multi adapter: 0.0551428794861 seconds&lt;/span&gt;
+&lt;span class="go"&gt;1000 times old style getToolByName: 0.0382490158081 seconds&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What conclusions can we expose here?&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;The old style and deprecated &lt;tt class="docutils literal"&gt;getToolByName&lt;/tt&gt; is &lt;strong&gt;faster&lt;/strong&gt; than the
+new style way that uses the &lt;tt class="docutils literal"&gt;plone_portal_state&lt;/tt&gt; multi adapter that
+is supposed to cache the result! I ran the test several times to
+confirm this is not a bad trip or beer abuse effect. No, this is
+true, just continue using the old CMF style way to get a tool or the
+portal.&lt;/li&gt;
+&lt;li&gt;The (poorly used in Plone) Zope 3 &amp;quot;getSite&amp;quot; does not need a context
+or request object to get the site object. Wow! Interresting in lots
+of design situations. And in addition, it is &lt;strong&gt;100 times&lt;/strong&gt; faster
+than the &amp;quot;official&amp;quot; APIs.&lt;/li&gt;
+&lt;li&gt;Zope 3 offers new services that deserve to be used more and more.
+Plone suffers of serious performances issues, more particularly for
+authenticated users, sorry to say this but it's true. We shouldn't
+need to use ZEO or Squid when 10 authenticated users manage content
+in a Plone site.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Okay, that benchmark does not match real applications. Who searches 1000
+times the portal object in a Plone based app?&lt;/p&gt;
+&lt;p&gt;But there are certainly dozen of other tricky things in Plone,
+Archetypes or CMF that should be re designed to address the Plone
+performance issues.&lt;/p&gt;
+&lt;p&gt;Have you guys found other hints to have a faster Plone without the need
+to cache somewhere?&lt;/p&gt;
+</summary><category term="Plone"></category><category term="Zope 2"></category><category term="Zope 3"></category></entry><entry><title>Archetypes sucks...</title><link href="http://glenfant.github.io/archetypes-sucks.html" rel="alternate"></link><updated>2008-05-09T15:04:00+02:00</updated><author><name>glenfant</name></author><id>tag:glenfant.github.io,2008-05-09:archetypes-sucks.html</id><summary type="html">&lt;p&gt;Eh, not my personal opinion but...&lt;/p&gt;
+&lt;p&gt;That's what we can read in some posts and blogs. So, why does AT sucks
+according to these opinions?&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;It's old style python (read mostly plain 2.1 python) and doesn't use
+the latest features that came up to Python 2.4 (decorators, misc new
+style classes features...).&lt;/li&gt;
+&lt;li&gt;There's no out of the box support for repetead fields or groups of
+fields (read &amp;quot;we can't add n files or images&amp;quot;)&lt;/li&gt;
+&lt;li&gt;AT is uselessly noisy, and it's code is now as messy as obese.&lt;/li&gt;
+&lt;li&gt;AT is slow, more specifically for authors, and is a major cause of
+Plone lazyness.&lt;/li&gt;
+&lt;li&gt;AT APIs are sometimes complicated. We use
+&amp;quot;content.getField('foo').set(content, value)&amp;quot; when Python 2.4 could
+let us just type &amp;quot;content.fields.foo = value&amp;quot; or better &amp;quot;content.foo
+= value&amp;quot;.&lt;/li&gt;
+&lt;li&gt;AT is not Zope3 &amp;quot;ish&amp;quot;, or does the minimal stuff to run within Plone
+3. And yes, it uses always the old style Zope 2 interfaces, CMF skins
+layer, nested complex ZPT macros where viewlets could do better job.&lt;/li&gt;
+&lt;li&gt;The set of metadata that ship with AT is not really extensible or
+replaceable though it's named ExtensibleMetadata.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So... Let's &lt;strong&gt;KILL&lt;/strong&gt; Archetypes! Yes, and what else?&lt;/p&gt;
+&lt;p&gt;Okay there's new kids on the block. There's lot of buzz around good
+newcomers in the field of AT, like the new plone base contents (see the
+&lt;a class="reference external" href="http://pypi.python.org/pypi/plone.app.content"&gt;plone.app.content&lt;/a&gt;
+egg) you can use if you don't need advanced features.&lt;/p&gt;
+&lt;p&gt;Or you could wait for the promising new framework
+&lt;a class="reference external" href="http://devilstickproject.net/"&gt;Devilstick&lt;/a&gt; that will let us define
+the data model with XML.&lt;/p&gt;
+&lt;p&gt;Just don't forget that if Plone ships with a nice collection of content
+types, has so many third party content types and rich services, if Plone
+is often referred as the best open-source CMS, if you can sell Plone
+based competitive solutions to your customers you just need to say
+&amp;quot;&lt;strong&gt;Thank you so much Archetypes developers&lt;/strong&gt;&amp;quot;.&lt;/p&gt;
+&lt;p&gt;In addition, most (all?) of above listed issues of today's Archetypes
+can be fixed in the future without breaking support for actual content
+types.&lt;/p&gt;
+&lt;p&gt;Due to so many skilled developers and rich solutions Archetypes is here
+to stay for years and years. Yeah!&lt;/p&gt;
+</summary><category term="Plone"></category></entry></feed>

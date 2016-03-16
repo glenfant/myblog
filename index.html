@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Digital Snake and Family</title>
+        <link rel="stylesheet" href="http://glenfant.github.io/theme/css/main.css" />
+        <link href="http://glenfant.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Digital Snake and Family Atom Feed" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://glenfant.github.io/">Digital Snake and Family  <strong>Gossips about (mostly) Python based technologies</strong></a></h1>
+                <nav><ul>
+                    <li><a href="http://glenfant.github.io/pages/about.html">About</a></li>
+                    <li><a href="http://glenfant.github.io/category/blog.html">Blog</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="http://glenfant.github.io/private-pypi-servers-forewords.html">Private Pypi servers - 1 - Forewords</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2013-08-28T21:01:00+02:00">
+                Published: Mer 28 août 2013
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://glenfant.github.io/author/gilles-lenfant.html">Gilles Lenfant</a>
+        </address>
+<p>In <a href="http://glenfant.github.io/category/blog.html">Blog</a>.</p>
+<p>tags: <a href="http://glenfant.github.io/tag/plone.html">Plone</a> <a href="http://glenfant.github.io/tag/python.html">Python</a> </p>
+</footer><!-- /.post-info --><div class="section" id="intended-audience">
+<h2>Intended audience</h2>
+<p>We assume most of you readers are already familiar with the public Pypi
+- formerly known as Cheeseshop - server.</p>
+<p>As user, you already know how to search and browse on
+<a class="reference external" href="https://pypi.python.org/pypi">Pypi</a> then install the packages that
+fit with your app.</p>
+<p>We also assume that pip, easy_install and zc.buildout have no major
+secret for you.</p>
+<p>In addition, you are supposed to know how to tweak correctly the
+setup.py of your personal package - with appropriate metadata - such you
+can deploy this package on Pypi such others - or yourself - can install
+it with the various installation tools mentioned in previous paragraph.</p>
+<p>If not, please have a look at the official documentations for these
+tools :</p>
+<ul class="simple">
+<li>setuptools: <a class="reference external" href="http://pythonhosted.org/setuptools/index.html">http://pythonhosted.org/setuptools/index.html</a></li>
+<li>pip: <a class="reference external" href="http://www.pip-installer.org/en/latest/">http://www.pip-installer.org/en/latest/</a></li>
+<li>zc.buildout: <a class="reference external" href="https://pypi.python.org/pypi/zc.buildout">https://pypi.python.org/pypi/zc.buildout</a> and
+<a class="reference external" href="http://www.buildout.org/en/latest/">http://www.buildout.org/en/latest/</a></li>
+</ul>
+</div>
+<div class="section" id="why-a-private-pypi-server">
+<h2>Why a private Pypi server?</h2>
+<p>Most of professional Python developers work in companies or as
+freelances and contribute to commercial and private projects which
+results of clever combination of publicly available packages (lxml,
+SQLAlchemy, …) and private package that leverage the various domains of
+your applications features.</p>
+<p>In order to carry on using your favourite Python packaging and
+installation software factory tools, you need of course to have a
+private repository of packages to build your private applications while
+keeping the public packages you need in their own respective repository
+(usually the Pypi or one of its official clones).</p>
+</div>
+<div class="section" id="the-compared-features">
+<h2>The compared features</h2>
+<div class="section" id="software-foundations">
+<h3>Software foundations</h3>
+<p>Of course, you’re not supposed to do anything else than running the
+installation recipe of your favourite Pypi server. But you may prefer
+such or such base framework if you want to contribute later, or you may
+have some pain to install the required database, or other requirement,
+these information are here for this.</p>
+</div>
+<div class="section" id="base-frameworks">
+<h3>Base frameworks</h3>
+<p>I’m not trying to open a flame on the various base frameworks used by
+our various Pypi clones, but, as programmers, you may prefer such or
+such framework if you want to contribute or fix bugs of your favorite
+Pypi server.</p>
+</div>
+<div class="section" id="database">
+<h3>Database</h3>
+<p>Some of the nominees required a 3rd party database. Is this database
+compatible with your company policy, or with the target system you want
+to dedicate to your Pypi server ?</p>
+</div>
+<div class="section" id="installation">
+<h3>Installation</h3>
+<p>Some words about installation. But from the easiest to the most complex
+of our nominees, installation and basic customization are usually easy.</p>
+</div>
+<div class="section" id="documentation-community-support">
+<h3>Documentation, Community support</h3>
+<p>As you are going to choose, perhaps for a long period, an application
+that is actively maintained</p>
+<p>About this, some private Pypi servers have been discarded from this
+article because these are not actively maintained anymore.</p>
+<p>Even if most of us are Python experts, and are supposed to feel
+comfortable on Unix admin and databases, we don’t like to grep the code
+when the documentation is missing or is too spartan. And a good,
+structured and exhaustive documentation denote high quality products.</p>
+</div>
+<div class="section" id="ui">
+<h3>UI</h3>
+<p>Some of the nominees have nearly no Web UI, you may anyway not need an
+UI if you have few packages.</p>
+<p>A Web UI may be useful for things like changing security settings on a
+particular package, changing its keywords or some features of its
+documentation, removing or hiding deprecated versions, ...</p>
+</div>
+<div class="section" id="proxying">
+<h3>Proxying</h3>
+<p>Proxying the public Pypi or another public server may be useful.</p>
+<ul class="simple">
+<li>Your proxy can distribute public packages when the official Pypi is
+down.</li>
+<li>You work behind your company’s proxy and this makes a mess to
+easy_install from the official Pypi.</li>
+</ul>
+<p>Some of the competitors described in this article may contain clones of
+packages that are distributed by the official Pypi. These clones
+packages may be updated periodically through a “cronned” query.</p>
+</div>
+<div class="section" id="users-management-and-privileges">
+<h3>Users management and privileges</h3>
+<p>Your IT infrastructure has already a common authentication source (LDAP
+or like) and you don’t want to mess your users with an additional
+credential to remember ?</p>
+<p>You want to provide these users fine grained privileges on various parts
+of your private Pypi, either on a per user base or through groups and
+roles ?</p>
+<p>If your private Pypi server has multiple repositories (see below), you
+want to grant or disallow distinct groups of users or individual users
+in a per repository policy ?</p>
+</div>
+<div class="section" id="custom-security-policies">
+<h3>Custom security policies</h3>
+<p>Ah, the Pypi server you have been dreaming of is almost what you need
+but the built in security policy does not comply exactly your
+requirements. You need something fine grained that lets you define
+custom roles with dedicated and maybe localized permissions.</p>
+</div>
+<div class="section" id="multiple-repositories">
+<h3>Multiple repositories</h3>
+<p>With one server instance you may publish two or more repositories with
+their own security policies thanks to the above mentioned users
+management and privileges. This may be useful if you need a private and
+a public repository, or if you need to give to your various customers or
+partners access to their dedicated packages.</p>
+</div>
+<div class="section" id="upload-with-setuptools">
+<h3>Upload with setuptools</h3>
+<p>If your private Pipi server has this feature, you could register and
+upload your private Python packages with the usual setup respective
+commands :</p>
+<p>python setup.py sdist register [options]</p>
+<p>python setup.py sdist upload [options]</p>
+<p>If you prefer a more minimalistic Pypi server that has not this feature
+(say a simple Apache static distributed directory) , you should :</p>
+<p>python setup.py sdist</p>
+<p>scp dist/foo-1.2.3.tar.gz <a class="reference external" href="mailto:myself&#64;apache-pypi">myself&#64;apache-pypi</a>:/home/distros/foo/</p>
+</div>
+<div class="section" id="xmlrpc-and-rest-json-support">
+<h3>XMLRPC and REST/JSON support</h3>
+<p>This is not an essential feature though none of pip,
+setuptools/easy_install or zc.buildout seem to use this exploration
+feature that’s provided by the official Pypi.</p>
+<p>Read <a class="reference external" href="http://wiki.python.org/moin/PyPIXmlRpc">http://wiki.python.org/moin/PyPIXmlRpc</a> and
+<a class="reference external" href="http://wiki.python.org/moin/PyPIJSON">http://wiki.python.org/moin/PyPIJSON</a> .</p>
+<p>I could add that I never needed this for in the Python projects I’ve
+been working on. But perhaps you care about this. That’s why I made a
+small test script to run against each nominee.</p>
+</div>
+</div>
+<div class="section" id="the-nominees">
+<h2>The nominees</h2>
+<div class="section" id="apache">
+<h3>Apache</h3>
+<p>Yes, you can use a pure Apache with dedicated configuration to make your
+private Pypi server. This is a very reliable solution that just needs a
+dedicated configuration section. Preferably for a dedicated virtual
+host, or several virtual hosts since you may have multiple repositories
+for one Apache instance. Of course, there’s no upload capability, nor
+Web dedicated UI, unless you call browsing the simple index an UI.</p>
+</div>
+<div class="section" id="pypi-itself">
+<h3>Pypi itself</h3>
+<p>If the official Pypi as at <a class="reference external" href="http://pypi.python.org">http://pypi.python.org</a> is exactly what you
+need, thats perfect. This software is open source and may be installed
+in your private servers or cloud.</p>
+</div>
+<div class="section" id="plone-software-center">
+<h3>Plone Software Center</h3>
+<p>The venerable Plone is a modern, full featured non opinionated CMS with
+a modern UI. Products.PloneSoftwareCenter is a rich add-on for Plone
+that lets you add to a company intranet the features of a Pypi server,
+with a rich UI, setuptools upload capability, and a documentation area.</p>
+<p>You may add Products.Poi to add trackers to your package areas.</p>
+<p>But Plone is some kind of “monster” that provides out of the box lots of
+features that are not in the domain of a Pypi server requirements. In
+addition, a Plone app is resources expensive and requires more admin
+monitoring than other solutions. Your IT department executives would not
+like this.</p>
+<p>For the ones who care about corporate theming, PSC can be themed through
+the usual Plone theming service - read Diazo based themes with the
+latest Plone versions.</p>
+</div>
+<div class="section" id="mypypi">
+<h3>mypypi</h3>
+<p>mypypi is a full featured Pypi server built on top of Zope 3. It
+provides a spartan and old style but fully functional and nearly
+complete UI.</p>
+<p>It leverages the security features and the user sources interfaces of
+Zope 3 such you may customize the user sources and security policy to
+whatever you may prefer if you can understand what is ZCML and if you
+know how to add custom user sources available in the Zope ecosystem.</p>
+</div>
+<div class="section" id="crate-io">
+<h3>crate.io</h3>
+<p>crate.io is the newcomer in the gang and benefits of a very positive
+buzz. Its UI is resolutely modern in line with the new twitter bootstrap
+trend. Its framework leverages asynchronisms through Celery that
+supports heavy time consuming tasks, and thus helps to have a fast and
+fluid UI.</p>
+<p>Meet its public repository and have an account at <a class="reference external" href="http://crate.io">http://crate.io</a></p>
+</div>
+<div class="section" id="devpi">
+<h3>devpi</h3>
+</div>
+<div class="section" id="inupypi">
+<h3>inupypi</h3>
+</div>
+<div class="section" id="pypiserver">
+<h3>pypiserver</h3>
+</div>
+<div class="section" id="localshop">
+<h3>localshop</h3>
+</div>
+<div class="section" id="simplepypi">
+<h3>simplepypi</h3>
+</div>
+<div class="section" id="hey-wait-there-are-other-ones">
+<h3>Hey, wait! There are other ones</h3>
+<p>Why do I not tell any word about them ?</p>
+<p>The answer is simple : the other Pypi private server software (known by
+me) seem to be some kind of abandonwares. But if you want to make a test
+drive of these and make an opinion...</p>
+<ul class="simple">
+<li>ClueReleaseManager: <a class="reference external" href="https://pypi.python.org/pypi/ClueReleaseManager">https://pypi.python.org/pypi/ClueReleaseManager</a></li>
+<li>EggBasket: <a class="reference external" href="http://trac.chrisarndt.de/code/wiki/EggBasket">http://trac.chrisarndt.de/code/wiki/EggBasket</a></li>
+<li>haufe.eggserver: <a class="reference external" href="https://pypi.python.org/pypi/haufe.eggserver">https://pypi.python.org/pypi/haufe.eggserver</a></li>
+<li>chishop: <a class="reference external" href="https://github.com/ask/chishop">https://github.com/ask/chishop</a></li>
+<li>scrambled: <a class="reference external" href="https://pypi.python.org/pypi/scrambled">https://pypi.python.org/pypi/scrambled</a></li>
+</ul>
+<p>If you’re a contributor of one of the above mentioned softwares, and I
+missed something. Or if you know of another private Pypi server software
+that’s not mentioned in this article, please let me know what I missed
+or where I’m wrong. I’ll update this article accordingly. But, remember,
+this is not a troll playground :D</p>
+</div>
+</div>
+                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://glenfant.github.io/back-on-iwmemberreplace.html" rel="bookmark"
+                           title="Permalink to Back on iw.memberreplace">Back on iw.memberreplace</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2009-03-08T14:36:00+01:00">
+                Published: Dim 08 mars 2009
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://glenfant.github.io/author/glenfant.html">glenfant</a>
+        </address>
+<p>In <a href="http://glenfant.github.io/category/blog.html">Blog</a>.</p>
+<p>tags: <a href="http://glenfant.github.io/tag/plone.html">Plone</a> <a href="http://glenfant.github.io/tag/zope-2.html">Zope 2</a> <a href="http://glenfant.github.io/tag/zope-3.html">Zope 3</a> </p>
+</footer><!-- /.post-info -->                <p class="first last">Bulk attributing content to members</p>
+
+                <a class="readmore" href="http://glenfant.github.io/back-on-iwmemberreplace.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://glenfant.github.io/a-simple-benchmark-getting-the-site-object.html" rel="bookmark"
+                           title="Permalink to A simple benchmark getting the site object">A simple benchmark getting the site object</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2008-05-10T10:57:00+02:00">
+                Published: Sam 10 mai 2008
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://glenfant.github.io/author/gilles-lenfant.html">Gilles Lenfant</a>
+        </address>
+<p>In <a href="http://glenfant.github.io/category/blog.html">Blog</a>.</p>
+<p>tags: <a href="http://glenfant.github.io/tag/plone.html">Plone</a> <a href="http://glenfant.github.io/tag/zope-2.html">Zope 2</a> <a href="http://glenfant.github.io/tag/zope-3.html">Zope 3</a> </p>
+</footer><!-- /.post-info -->                <p class="first last">Different ways to get the Plone site object</p>
+
+                <a class="readmore" href="http://glenfant.github.io/a-simple-benchmark-getting-the-site-object.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://glenfant.github.io/archetypes-sucks.html" rel="bookmark"
+                           title="Permalink to Archetypes sucks...">Archetypes sucks...</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2008-05-09T15:04:00+02:00">
+                Published: Ven 09 mai 2008
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://glenfant.github.io/author/glenfant.html">glenfant</a>
+        </address>
+<p>In <a href="http://glenfant.github.io/category/blog.html">Blog</a>.</p>
+<p>tags: <a href="http://glenfant.github.io/tag/plone.html">Plone</a> </p>
+</footer><!-- /.post-info -->                <p class="first last">Hearing bad feedbacks from Archetypes. WTF?</p>
+
+                <a class="readmore" href="http://glenfant.github.io/archetypes-sucks.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://glenfant.wordpress.com">Previous blog</a></li>
+                            <li><a href="http://gillux.blogspot.fr/">Social / cultural blog (fr)</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://glenfant.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="https://twitter.com/glenfant">twitter</a></li>
+                            <li><a href="https://github.com/glenfant">github</a></li>
+                            <li><a href="https://fr.linkedin.com/in/gilles-lenfant-57a9a810">linkedin</a></li>
+                            <li><a href="https://www.facebook.com/gilles.lenfant">facebook</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
