@@ -39,3 +39,5 @@ THEME = 'notmyidea'
 
 # https://github.com/streeter/pelican-gist
 PLUGINS = ['pelican_gist']
+
+STATIC_PATHS = ['images']

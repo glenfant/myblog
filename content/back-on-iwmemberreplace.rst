@@ -31,6 +31,7 @@ new component ;o)
 
 Enjoy...
 
-|iw.memberreplace control panel|
+.. figure:: {filename}/images/memberreplace-control-panel.png
+   :alt: The control panel
 
-.. |iw.memberreplace control panel| image:: http://glenfant.files.wordpress.com/2009/03/cliche-2009-03-08-13-53-17.png
+   The control panel
