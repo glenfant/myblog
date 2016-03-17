@@ -36,3 +36,6 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 THEME = 'notmyidea'
+
+# https://github.com/streeter/pelican-gist
+PLUGINS = ['pelican_gist']
