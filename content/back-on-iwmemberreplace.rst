@@ -1,19 +1,18 @@
 Back on iw.memberreplace
 ########################
 :date: 2009-03-08 14:36
-:author: glenfant
+:author: Gilles Lenfant
 :category: Blog
 :tags: Plone, Zope 2, Zope 3
 :slug: back-on-iwmemberreplace
 :status: published
 :summary: Bulk attributing content to members
 
-I blogged some months ago about
-`iw.memberrreplace <http://plone.org/products/iw-memberreplace/>`__. In
-some words, iw.memberreplace provides a tool that clones the security
-features of an unser to another one (ownership, DC creator, sharings,
-group membership). No more hassle digging around huge Plone site and
-hundreds of clicks to do this.
+I blogged some months ago about `iw.memberrreplace <http://plone.org/products/iw-memberreplace/>`__
+in `this page <{filename}safely-replace-a-plone-member.rst>`_. In some words,
+iw.memberreplace provides a tool that clones the security features of an unser
+to another one (ownership, DC creator, sharings, group membership). No more
+hassle digging around huge Plone site and hundreds of clicks to do this.
 
 Last week, I read a conversation with `John Stahl and Mustapha
 Benali <http://n2.nabble.com/Re%3A-what%27s-up-with-plone.app.changeownership-%21-%21-tp2416270p2416270.html>`__
