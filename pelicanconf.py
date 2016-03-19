@@ -41,3 +41,5 @@ THEME = 'notmyidea'
 PLUGINS = ['pelican_gist']
 
 STATIC_PATHS = ['images']
+
+DISQUS_SITENAME = 'monbloggithub'
