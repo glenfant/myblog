@@ -40,6 +40,14 @@ THEME = 'notmyidea'
 # https://github.com/streeter/pelican-gist
 PLUGINS = ['pelican_gist']
 
-STATIC_PATHS = ['images']
+# Tell pelican where it should copy that file to in your output folder
+STATIC_PATHS = ['images', 'assets']
+
+# Tell pelican where your custom.css file is in your content folder
+EXTRA_PATH_METADATA = {
+    'assets/custom.css': {'path': 'theme/css/custom.css'}
+}
+
+CSS_FILE = 'custom.css'
 
 DISQUS_SITENAME = 'monbloggithub'

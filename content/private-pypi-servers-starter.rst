@@ -160,18 +160,22 @@ Upload with setuptools
 
 If your private Pipi server has this feature, you could register and
 upload your private Python packages with the usual setup respective
-commands :
+commands:
 
-python setup.py sdist register [options]
+.. code-block:: console
 
-python setup.py sdist upload [options]
+   python setup.py sdist register [options]
+
+   python setup.py sdist upload [options]
 
 If you prefer a more minimalistic Pypi server that has not this feature
 (say a simple Apache static distributed directory) , you should :
 
-python setup.py sdist
+.. code-block:: console
 
-scp dist/foo-1.2.3.tar.gz myself@apache-pypi:/home/distros/foo/
+   python setup.py sdist
+
+   scp dist/foo-1.2.3.tar.gz myself@apache-pypi:/home/distros/foo/
 
 XMLRPC and REST/JSON support
 ----------------------------

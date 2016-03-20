@@ -42,8 +42,8 @@ plone.recipe.zope2instance part:
 .. code-block:: ini
 
    [instance]
-   # recipe = plone.recipe.zope2instance
-   ...
+   recipe = plone.recipe.zope2instance
+   # ...
    extra-paths =
        /Developer/eclipse/plugins/org.python.pydev.debug_2.2.4.2011110216/pysrc
 

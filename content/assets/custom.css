@@ -1,0 +1,112 @@
+/* Custom CSS over notmyidea theme */
+
+@import url("main.css");
+
+/* @group Admonitions */
+
+div.admonition {
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 5px #888;
+    border: 1px solid #ff6;
+    background-color: #fdfd96;
+    clear: left;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+div.note,
+div.hint,
+div.tip,
+div.important,
+div.caution,
+div.attention,
+div.danger,
+div.seealso {
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 5px #888;
+    border: 1px solid #ff6;
+    background-color: #fdfd96;
+    clear: left;
+    padding-left: 65px;
+    padding-right: 1em;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+div.note {
+    background-image: url(../../assets/note-icon.png);
+}
+
+div.hint {
+    background-image: url(../../assets/hint-icon.png);
+}
+
+div.tip {
+    background-image: url(../../assets/tip-icon.png);
+}
+
+div.important {
+    background-image: url(../../assets/important-icon.png);
+}
+
+div.caution {
+    background-image: url(../../assets/caution-icon.png);
+}
+
+div.attention {
+    background-image: url(../../assets/attention-icon.png);
+}
+
+div.danger {
+    background-image: url(../../assets/danger-icon.png);
+}
+
+div.error,
+div.warning {
+    border: 2px solid #f66;
+    padding-left: 65px;
+    padding-right: 1em;
+}
+
+div.error {
+    background: #ffb347 url(../../assets/error-icon.png) no-repeat scroll left top;
+}
+
+div.warning {
+    background: #ffb347 url(../../assets/warning-icon.png) no-repeat scroll left top;
+}
+
+p.admonition-title {
+    display: block;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+/*
+p.admonition-title:after {
+    content: ":";
+}
+*/
+
+div.topic {
+    background-color: #eee;
+}
+
+div.sidebar {
+    background-color: #edfc00;
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 5px #888;
+    float: right;
+    margin: 5px;
+    font-size: 85%;
+    max-width: 300px;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+p.sidebar-title {
+    font-weight: bold;
+    font-size: 120%
+}
