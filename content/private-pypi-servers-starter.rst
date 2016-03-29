@@ -5,7 +5,7 @@ Private Pypi servers - 1 - Forewords
 :category: Blog
 :tags: Plone, Python
 :slug: private-pypi-servers-forewords
-:status: published
+:status: draft
 :summary: Presentation of the private PyPI servers competition.
 
 Intended audience

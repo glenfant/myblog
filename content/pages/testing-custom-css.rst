@@ -7,6 +7,25 @@ Testing custom CSS
 :summary: Some words about me and this blog
 :category: Meta
 
+Tables
+======
+
+.. list-table:: This is the table title
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Term
+     - Description
+   * - Lorem ipsum dolor
+     - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   * - ``Lorem ipsum dolor``
+     - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+Admonitions
+===========
+
 .. admonition:: An admonition
 
    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

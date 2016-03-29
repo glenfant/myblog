@@ -5,7 +5,7 @@ A simple benchmark getting the site object
 :tags: Plone, Zope 2, Zope 3
 :category: Blog
 :slug: a-simple-benchmark-getting-the-site-object
-:status: published
+:status: draft
 :summary: Different ways to get the Plone site object
 
 Hi,

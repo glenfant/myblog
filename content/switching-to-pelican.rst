@@ -16,7 +16,7 @@ Several good solutions are possible, my requirements are :
 
 - I need a static site generator such I could host it anywhere for cheap, while keeping its source content in a SCM - Github as it happens - with an easy deplonyment tool.
 
-- I need to write my site in `reStructuredText <http://docutils.sourceforge.net/rst.html>`_ since I prefer its approach over Mardonw or others. This limits my choice of static site generators to the ones coded in the Python language.
+- I need to write my site in `reStructuredText <http://docutils.sourceforge.net/rst.html>`_ since I prefer its approach over Markdown or others. This limits my choice of static site generators to the ones coded in the Python language.
 
 - I need something that's blog oriented. I'm familiar with `Sphinx <http://www.sphinx-doc.org/en/stable/index.html>`_ but it is too much "software documentation" oriented.
 

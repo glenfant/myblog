@@ -2,7 +2,7 @@
 
 @import url("main.css");
 
-/* @group Admonitions */
+/* @group RST Admonitions */
 
 div.admonition {
     border-radius: 0.5em;
@@ -109,4 +109,25 @@ div.sidebar {
 p.sidebar-title {
     font-weight: bold;
     font-size: 120%
+}
+
+/* RST List table */
+
+table.docutils {
+    border: 2px solid #ff6961;
+}
+
+table.docutils caption {
+    background-color: #ff6961;
+    font-size: 120%;
+}
+
+table.docutils th.head {
+    background-color: #eeeeee;
+    text-align: center;
+    border: 2px solid #ff6961;
+}
+
+table.docutils td {
+    border: 2px solid #ff6961;
 }
