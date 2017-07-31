@@ -2,16 +2,16 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Gilles Lenfant'
-SITENAME = u'Digital Snake and Family'
-SITESUBTITLE = u'Gossips about (mostly) Python based technologies'
+AUTHOR = 'Gilles Lenfant'
+SITENAME = 'Digital Snake and Family'
+SITESUBTITLE = 'Gossips about (mostly) Python based technologies'
 SITEURL = ''
 
 PATH = 'content'
 
 TIMEZONE = 'Europe/Paris'
 
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
