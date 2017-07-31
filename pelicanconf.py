@@ -22,12 +22,13 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('Previous blog', 'http://glenfant.wordpress.com'),
-         ('Social / cultural blog (fr)', 'http://gillux.blogspot.fr/'))
+         ('Social / cultural blog (french)', 'http://gillux.blogspot.fr/'))
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/glenfant'),
           ('github', 'https://github.com/glenfant'),
           ('linkedin', 'https://fr.linkedin.com/in/gilles-lenfant-57a9a810'),
+          ('stackoverflow', 'https://stackoverflow.com/users/826736/glenfant'),
           ('facebook', 'https://www.facebook.com/gilles.lenfant'))
 
 DEFAULT_PAGINATION = 10
