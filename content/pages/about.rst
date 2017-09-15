@@ -15,7 +15,7 @@ You are actually reading my professional IT oriented blog, and professional site
 Who's that guy?
 ===============
 
-My name is Gilles Lenfant. I have been an IT engineer for years in various jobs in that order:
+My name is **Gilles Lenfant**. I have been an IT engineer for years in various jobs in that order:
 
 - Industrial critical real time embedded systems
 - QA engineer
@@ -28,11 +28,41 @@ My name is Gilles Lenfant. I have been an IT engineer for years in various jobs 
 
 I have been mostly developing applications in these technologies in decreasing skill:
 
-- Python, Javascript, C, Java, assemblers
-- Web frameworks: Django, Zope, Flask
+- **Python**, Javascript, C, Java, assemblers
+- Web frameworks: **Django**, Flask, Zope, Tornado
 - SQL: MySQL, PostgreSQL
+- noSQL: Redis, `eXistdb <http://exist-db.org/exist/apps/homepage/index.html>`_,
+  `MarkLogic <http://www.marklogic.com/>`_.
 - XML: XPath, XSLT, XQuery
-- Others: Vagrant, Docker, Ansible, Sphinx, Robotframework
+- Others: Vagrant, Docker, Ansible, Sphinx, Robotframework,
+  Gitlab-CI, Jenkins, ...
 - QA standards: DO 178, DOD 2167
 
-Soon more information about me and my projects...
+Latest projects
+===============
+
+This is  a short list of big projects I have been proud to be involved in over these last years.
+
+Mappy
+-----
+
+`Mappy <https://fr.mappy.com/>`_ is one of the european leaders of maps and roadmaps services.
+
+I'm actually member of the "route" team that draws journeys between cities, finds public transport solutions (train, bus), and draws roadmaps.
+
+EvalUbik
+--------
+
+EvalUbik is an IoT security certification assistant that automates most IoT security hackings
+(passive sniffing, crypting method and key, password stealing, active identity theft, ...).
+Actually, LoRa, Sigfox, Zigbee, Bluetooth-LE devices automated security tests are supported. More
+to come in the future.
+
+EvalUbik is ran by `Digital Security <https://www.digitalsecurity.fr/en/>`_, a company of IT and
+IoT security consultants.
+
+Technical stack: AngularJS, Python, Django REST framework, Celery/RabbitMQ, Autobahn + Crossbar WAMP router.
+
+Assemblée nationale (french parliament)
+---------------------------------------
+
