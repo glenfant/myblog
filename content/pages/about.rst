@@ -50,6 +50,8 @@ Mappy
 
 I'm actually member of the "route" team that draws journeys between cities, finds public transport solutions (train, bus), and draws roadmaps.
 
+Technical stack: Python, Tornado, PostGreSQL.
+
 EvalUbik
 --------
 
@@ -66,3 +68,6 @@ Technical stack: AngularJS, Python, Django REST framework, Celery/RabbitMQ, Auto
 Assemblée nationale (french parliament)
 ---------------------------------------
 
+Loix is a distributed application that agglomerates, filters, qualifies, adds semantics to data provided by various business application (mostly XML) into a structured documents database. That database being source of documents for various downstream applications, including OpenData publisher.
+
+Technical stack: Python, Flask, Lxml, ZeroMQ, Redis, eXistdb, then MarkLogic.
