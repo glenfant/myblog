@@ -86,7 +86,7 @@ Open your ``buildout.cfg`` and add that stuff:
 Re-run your buildout. That's OK? Now open Eclipse and view your project
 properties. Et voilà...
 
-.. figure:: {filename}/images/pydev-pythonpath.png
+.. figure:: {static}/images/pydev-pythonpath.png
    :alt: Eclipse dashboard
 
    PYTHONPATH of Eclipse / Pydev environment

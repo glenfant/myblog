@@ -43,22 +43,22 @@ and subdirectives installed in your Zope 2 instance.
 Some screenshots
 ================
 
-.. figure:: {filename}/images/zcmldoc-control-panel.png
+.. figure:: {static}/images/zcmldoc-control-panel.png
    :alt: Available from the standard Zope control panel
 
    Available from the standard Zope control panel
 
-.. figure:: {filename}/images/zcmldoc-all-namespaces.png
+.. figure:: {static}/images/zcmldoc-all-namespaces.png
    :alt: All namespaces
 
    All namespaces
 
-.. figure:: {filename}/images/zcmldoc-browser-namespace.png
+.. figure:: {static}/images/zcmldoc-browser-namespace.png
    :alt: The "browser" namespace
 
    The "browser" namespace
 
-.. figure:: {filename}/images/zcmldoc-pages-directive.png
+.. figure:: {static}/images/zcmldoc-pages-directive.png
    :alt: The "pages" directive
 
    The "pages" directive

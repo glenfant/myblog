@@ -30,7 +30,7 @@ new component ;o)
 
 Enjoy...
 
-.. figure:: {filename}/images/memberreplace-control-panel.png
+.. figure:: {static}/images/memberreplace-control-panel.png
    :alt: The control panel
 
    The control panel
