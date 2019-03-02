@@ -192,6 +192,7 @@ This should display:
 
    Hello, this is the main entry point.
    Default value for option 1
+   Any Python object
    {'key': 'anything'}
 
 You have seen the default values of three options. Now let's start a custom configuration. Create in the same directory a ``customoptions.py`` file with only this line:
