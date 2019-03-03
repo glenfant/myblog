@@ -1,4 +1,2 @@
-.DS_Store
+.vscode/
 output/
-pelican.pid
-srv.pid
