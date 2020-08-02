@@ -1,6 +1,7 @@
 A simple customizable configuration
 ###################################
 :date: 2019-03-01 13:01
+:modified: 2020-07-31
 :author: Gilles Lenfant
 :category: Blog
 :tags: Python; Tip; Configuration
@@ -18,6 +19,11 @@ The purpose of this post is not to compare all these good but heavy solutions, b
 - Does not need any additional third party package
 - Store configuration data in Python files. (Thus if strong security matters, you may find this harmful.)
 - Let the user provide a custom configuration in a Python file which globals take over the default configuration values.
+
+.. attention::
+
+   If you love the way this recipe provides custom options to your application, from now, you should
+   consider using  `pyflexconfig <https://pypi.org/project/pyflexconfig/>`_ in place of this recipe.
 
 The files layout
 ================
